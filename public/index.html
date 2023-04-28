@@ -32,19 +32,19 @@
             },
 
             beforeCreate: function () {
-                console.log('beforeCreate');
+                console.log('beforeCreate: 인스턴스 생성, 라이프 사이클');
             },
 
             created: function () {
-                console.log('created');
+                console.log('beforeCreate: 생성후 다름단계, 첫 라이프 사이클');
             },
 
             mounted: function () {
-                console.log('mounted');
+                console.log('mounted: el속성의 인스턴스가 부착되고나서 호출');
             },
 
             updated: function () {
-                console.log('updated');
+                console.log('updated: 데이터변경으로 인한 화면요소변경까지 완료된시점');
             }
         });
 
